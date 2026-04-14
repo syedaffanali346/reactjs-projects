@@ -138,6 +138,7 @@ function App() {
 
 						{searched && !loading && audio && !error && (
 							<>
+								<p className="font-medium text-green-800">{audio.surah.name}</p>
 								<audio src={audio.audio} controls className="w-56 sm:w-96" />
 								<p className="font-medium text-green-800">{audio.text}</p>
 							</>
